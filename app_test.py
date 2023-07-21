@@ -22,8 +22,8 @@ st.title('あなたの位置情報履歴を可視化')
 st.header('あなたの軌跡を')
 
 # 普通のテキスト。Html や Markdown のパースをしない。
-st.text('ここでは緯度や経度を記録したCSVファイルを読み取り、あなたの行動を地図上で可視化できます。')
-st.text('※エラー表示が出ていますが、ファイルがないため起こるものであり、アップロードしていただければ通常通りご使用いただけます')
+st.text('ここでは緯度と経度を記録したCSVファイルを読み取り、あなたの行動を地図上で可視化できます。')
+# st.text('※エラー表示が出ていますが、ファイルがないため起こるものであり、アップロードしていただければ通常通りご使用いただけます')
 
 # ファイルアップローダー
 data = st.file_uploader("Choose a file",type="csv")
@@ -35,8 +35,8 @@ if data is not None:
   person_list = data["person"].unique()
   # 地図オブジェクトの作成
   map = folium.Map(tiles='OpenStreetMap')
-  color_list=['red','blue','green','purple','orange','darkred','lightred','beige','darkblue','darkgreen','cadetblue','darkpurple','white','pink','lightblue','lightgreen','gray','black','lightgray']
-  color_list=["purple"]
+  #color_list=['red','blue','green','purple','orange','darkred','lightred','beige','darkblue','darkgreen','cadetblue','darkpurple','white','pink','lightblue','lightgreen','gray','black','lightgray']
+  color_list=["darkred"]
   # 各人物の軌跡を追加
   for idx, person in enumerate(person_list):
     data_temp = data[data["person"] == person]
