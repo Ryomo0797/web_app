@@ -1,0 +1,8 @@
+streamlit
+os
+numpy
+pandas
+folium
+selenium
+import IPython
+streamlit_folium
