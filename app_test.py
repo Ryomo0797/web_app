@@ -1,3 +1,5 @@
+# streamlit run app_test.py
+
 import os
 import folium
 import pandas as pd
