@@ -1,7 +1,5 @@
 streamlit
-numpy
 pandas
 folium
 selenium
-IPython
 streamlit_folium

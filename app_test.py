@@ -7,7 +7,7 @@ from time import sleep as slp
 from selenium import webdriver
 import glob
 from selenium.webdriver.chrome.options import Options
-import IPython
+# import IPython
 import streamlit as st
 from streamlit_folium import st_folium
 
